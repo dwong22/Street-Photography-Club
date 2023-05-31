@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+html {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0 auto;
+    background-color: beige;
+}
+
+.main-content {
+    margin: 1.5rem;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    background-color: lightslategray;
+    padding: 1.5rem;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.photos .images-container {
+    display: flex;
+    max-width: 100%;
+    padding: 0 1%;
+}
+
+@media only screen and (max-width: 400px) {
+    header .content {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro h2 {
+        font-size: 1.25rem;
+    }
+    .intro p, .events {
+        font-size: 1rem;
+    }
+
+    .photos .images-container {
+        flex-direction: column;
+    }
+}
